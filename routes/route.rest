@@ -1,0 +1,17 @@
+GET http://localhost:3000/posts
+###
+
+GET http://localhost:3000/posts/623ef1796a1ec4fec02a041e1/
+
+###
+
+POST http://localhost:3000/posts/new/
+Content-Type: application/json
+
+{
+    "title":"Hello world! it feels good!"
+}
+
+###
+
+DELETE http://localhost:3000/posts/623ef1796a1ec4fec0a041e1/delete/

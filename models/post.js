@@ -28,6 +28,10 @@ const postSchema = new mongoose.Schema({
         required: true,
         ref: "category"
     },
+    tags: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "tag"
+    }],
     comments: [{
         type: mongoose.Schema.Types.ObjectId,
         required: true,
